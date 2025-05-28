@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #070707;
+            animation: fadeIn 2s;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid #0c0c0c;
+            animation: zoomIn 2s;
+        }
+
+        .bio {
+            max-width: 600px;
+            text-align: center;
+            color: #0c0c0c;
+            font-size: 1.2em;
+            animation: slideIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .navbar{
+                display:inline-flex;
+                gap: 50px;
+                animation-name: fadein 2s;
+            
+        }
+        ul li {
+            text-decoration: none;
+            list-style-type: none;
+        
+        }
+        ul li a{
+            text-decoration: none;
+            color: #070707;
+            background-color: black;
+            color: aliceblue;
+            padding: 20%;
+            border-radius: 80%;
+        }
+        .oo{
+            text-align: center;
+            justify-content: center;
+            margin-right:30%;}
+            body {
+    animation: backgroundAnimation 10s ease infinite; /* انیمیشن برای پس‌زمینه */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ارتفاع کامل صفحه */
+    margin: 0;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #353535;
+    }
+    50% {
+        background-color: #81807f;
+    }
+    100% {
+        background-color: #4a4544;
+    }
+}
+
+.video-container {
+    opacity: 0; /* مخفی کردن ویدیو در ابتدا */
+    animation: fadeIn 1s forwards; /* انیمیشن ورودی */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: textAnimation 1s ease forwards; /* انیمیشن برای عنوان */
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* ترانزیشن برای تغییرات */
+}
+
+button:hover {
+    transform: scale(1.1); /* بزرگ کردن دکمه */
+    background-color: #feb47b; /* تغییر رنگ پس‌زمینه */
+}
+
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobina Amini</h1>
+        <nav>
+            <div class="oo">
+                <ul class="navbar">
+                    <li class="p"><a href="about.html">About</a></li >
+                    <li><a href="potfolio.html">Project</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    
+    <img src="6.jpg" alt="" class="profile-image">
+    
+    <p class="bio">Hello! I am Mobina Amini. I am a web designer with a passion for coding 
+
+        I am passionate about personal interests such as reading, traveling, sports, etc. and I am always looking to learn and grow.
+        
+        Welcome to my website! I hope you find the content here useful.</p>
+</body>
+</html>
+

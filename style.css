@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* رنگ پس‌زمینه تیره */
+    color: #ffffff; /* رنگ متن سفید */
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1, h2, h3, p {
+    margin: 20px 0;
+    opacity: 0; /* شروع با حالت مخفی */
+    transform: translateY(20px); /* جابجایی به سمت پایین */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+h1 {
+    font-size: 2.5em;
+    animation: fadeInUp 1s forwards; /* انیمیشن برای عنوان */
+}
+
+h2 {
+    font-size: 2em;
+    animation: fadeInUp 1s forwards;
+}
+
+h3 {
+    font-size: 1.5em;
+    animation: fadeInUp 1s forwards;
+}
+
+p {
+    font-size: 1.2em;
+    animation: fadeInUp 1s forwards;
+}
+
+/* انیمیشن برای نمایان شدن */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* نمایان شدن */
+        transform: translateY(0); /* برگشت به حالت عادی */
+    }
+}
+
+/* لینک‌ها */
+a {
+    color: #bb86fc; /* رنگ لینک‌ها */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #ff4081; /* رنگ لینک‌ها هنگام هاور */
+    transform: scale(1.05); /* بزرگ‌تر شدن لینک‌ها */
+}
+
+/* دکمه‌ها */
+button {
+    background-color: #bb86fc; /* رنگ دکمه */
+    color: white; /* رنگ متن دکمه */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4081; /* تغییر رنگ دکمه هنگام هاور */
+    transform: scale(1.05); /* بزرگ‌تر شدن دکمه */
+}
+
+/* انیمیشن برای نمایان شدن در زمان بارگذاری */
+.fade-in {
+    animation: fadeIn 1s forwards; /* انیمیشن نمایان شدن */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* نمایان شدن */
+        transform: translateY(0); /* برگشت به حالت عادی */
+    }
+}
+
+/* افکت برای بارگذاری محتوا */
+.container {
+    opacity: 0; /* شروع با حالت مخفی */
+    animation: fadeIn 1s forwards; /* انیمیشن برای نمایان شدن */
+}

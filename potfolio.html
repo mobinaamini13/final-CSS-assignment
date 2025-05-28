@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project</title>
+
+    <style>
+        body{
+            background-image: url(5.jpg);
+        }
+        /* استایل‌ها */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347; /* رنگ تغییر در هاور */
+        }
+
+        .portfolio {
+            display: flex; /* استفاده از فلیکس برای چیدمان کارت‌ها */
+            justify-content: center; /* مرکزچین کردن کارت‌ها */
+            padding: 20px;
+            gap: 20px; /* فاصله بین کارت‌ها */
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن ترانزیشن */
+            width: 300px; /* عرض کارت */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px); /* حرکت به سمت بالا در هاور */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* سایه بیشتر در هاور */
+        }
+
+        .project-card img {
+            width: 100%; /
+            height: auto; 
+        }
+
+        .project-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        /* انیمیشن */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .link{
+            text-decoration: none;
+            color: rgb(248, 12, 12);
+            padding: 3%;
+            border-radius: 20%;
+            
+           
+        }
+    </style>
+</head>
+<body class="fade-in">
+    <header>
+        <h1>My project</h1>
+        <nav>
+            <ul>
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="potfolio.html">portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="portfolio">
+        <div class="project-card">
+            <img src="1.jpg" alt="project1"> <!-- تصویر پروژه ۱ -->
+            <div class="project-content">
+                <h2>Cookbook</h2>
+                <p>---
+                    Create a digital platform to collect, organize, and share recipes. This notebook can help users easily find their favorite recipes and share their cooking experiences with others.
+                    
+                    ---</p>
+                    <a href="https://mobinaamini13.github.io/assigment1/" class="link"> github profile</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="1.jpg" alt="project2"> <!-- تصویر پروژه ۲ -->
+            <div class="project-content">
+                <h2>Afghan Proverb</h2>
+                <p>This project not only helps preserve Afghanistan's cultural heritage, but also provides an opportunity to learn and exchange ideas about values and life lessons. It is hoped that with the cooperation of the community
+
+                    ---</p>
+                    <a href="https://mobinaamini13.github.io/-my-assignment-4/" class="link">github profile</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 My portfolio</p>
+    </footer>
+</body>
+</html>
